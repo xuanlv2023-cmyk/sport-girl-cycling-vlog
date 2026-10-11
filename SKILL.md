@@ -15,25 +15,29 @@ Dẫn dắt quy trình sản xuất video ngắn (Shorts / Reels / TikTok) thể
 
 ---
 
-## NGUYÊN TẮC CỐT LÕI: ZERO-DISTORTION & DYNAMIC PARALLEL TRACKING
+## NGUYÊN TẮC CỐT LÕI: ZERO-DISTORTION, TOKEN REGISTRY & ANTI-AI PHOTOREALISM
 
-1. **Khóa Diện Mạo & Vóc Dáng Nhân Vật Thương Hiệu (`@_Brand_Sport_Lead` - Uyên Hân):**
-   - Nữ Á Đông 21-23 tuổi, gương mặt thanh tú, má lúm đồng tiền duyên dáng khi cười mỉm, ánh mắt sáng rạng rỡ, làn da căng bóng mịn màng tự nhiên (*healthy glowing skin texture with delicate pores*).
-   - Tóc dài đen/nâu sẫm buộc đuôi ngựa (ponytail) có mái thưa bay trong gió (*wispy fringe bangs*).
-   - Vóc dáng thể thao săn chắc, thon gọn nhưng đầy đặn quyến rũ (*athletic toned physique, slim waist, full bust, shapely toned legs*).
-   - **Kỷ luật phụ kiện:** Không đeo hoa tai, không dây chuyền kim loại lủng lẳng (tránh AI vẽ méo mó khi chuyển động nhanh). Chỉ cho phép đồng hồ thông minh thể thao (smartwatch) trên cổ tay.
+1. **Hệ thống Token Tham chiếu Đồng bộ (Dynamic Token Registry):**
+   - **Nhân vật:** `@_Brand_Sport_Lead` (đơn nhân vật) hoặc `@_Char_Sport_Lead` + `@_Char_Cycling_Buddy` (đạp xe nhóm).
+   - **Xe đạp & Thiết bị:** `@_Bike_Laux_Purple`, `@_Bike_Battle_Gray`...
+   - **Bối cảnh & Cung đường:** `@_Location_City_Highway_Night`, `@_Location_Riverside_Path`, `@_Location_Urban_Bridge`...
+   - Mọi prompt Keyframe và Video bắt buộc gọi đúng Token trong `[CHARACTER ANCHOR]`, `[BICYCLE ANCHOR]` và `[ENVIRONMENT & LIGHTING]`.
 
-2. **Kỹ Thuật Máy Quay Bám Đuổi Song Song (Dynamic Parallel Tracking Cam):**
+2. **Bộ quy tắc Triệt tiêu Chất AI (Anti-AI Photorealism System):**
+   - **Cấm tiệt:** `porcelain, flawless skin, plastic, airbrushed, supermodel, perfect face, CGI, 3D render, futuristic neon`.
+   - **Bắt buộc dùng da thật thể thao có lỗ chân lông:** `unretouched candid cycling vlog photography, authentic living 21-year-old Vietnamese athletic girl, natural soft matte skin finish with visible micro-pores, natural workout flush, windblown hair tendrils`.
+   - **Ánh sáng đường phố đời thường:** `authentic municipal street lamp tungsten glow, realistic night road ambiance, natural low-light sensor grain, realistic tire contact shadows on asphalt road`.
+
+3. **Kỹ Thuật Máy Quay Bám Đuổi Song Song (Dynamic Parallel Tracking Cam):**
    - Máy quay di chuyển đồng tốc song song cùng xe đạp trên đường (side tracking hoặc 3/4 tracking).
    - Tốc độ khung hình 24/30 FPS với hiệu ứng chuyển động chân thực (*natural motion blur on background and road, subject remains tack-sharp in center focus*).
    - Cấm lia máy giật cục, cấm rung lắc méo hình AI (Zero warp, zero jitter).
 
-3. **Kỷ Luật Kiểm Soát Bàn Đạp & Bánh Xe (Bicycle Mechanical Integrity Rule):**
-   - Xe đạp là vật thể cơ khí dễ bị AI vẽ lỗi (3 bàn đạp, chân xuyên qua khung xe, nan hoa biến dạng).
-   - Bắt buộc dùng cú pháp khóa cấu trúc xe: `mechanically accurate bicycle frame, two pedals synchronized with feet, realistic round wheels with straight spokes, feet firmly planted on pedals with natural rotational pedaling motion, strictly no extra limbs, no phantom legs`.
+4. **Kỷ Luật Kiểm Soát Bàn Đạp & Bánh Xe (Bicycle Mechanical Integrity Rule):**
+   - Cú pháp bắt buộc: `mechanically accurate bicycle frame, two pedals synchronized with feet, realistic round wheels with straight spokes, feet firmly planted on pedals with natural rotational pedaling motion, strictly no extra limbs, no phantom legs`.
 
-4. **Hai Trụ Cột Nội Dung Linh Hoạt:**
-   - **Trụ cột 1: Đạp Xe Ngoài Trời (Outdoor Cycling):** Đạp xe đêm phố xá lung linh đèn vàng/bokeh, đại lộ ven sông, cầu vượt, đường rừng rợp bóng cây ban ngày. Vừa đạp vừa cười rạng rỡ, vẫy tay chào camera, tóc bay trong gió.
+5. **Hai Trụ Cột Nội Dung Linh Hoạt:**
+   - **Trụ cột 1: Đạp Xe Ngoài Trời (Outdoor Cycling):** Đạp xe đêm phố xá lung linh đèn vàng, đại lộ ven sông, cầu vượt. Vừa đạp vừa cười rạng rỡ, vẫy tay chào camera, tóc bay trong gió.
    - **Trụ cột 2: Fitness & Workout Tại Nhà (Indoor Fitness):** Nhảy bạt nhún mini trampoline theo beat nhạc, đứng máy rung toàn thân (vibration plate), đạp xe spinning trong phòng khách, tập tạ tay hồng (dumbbells).
 
 ---
@@ -71,15 +75,16 @@ Hỏi hoặc xác định 4 thông số cốt lõi trước khi sản xuất:
 ---
 
 ## Output Contract (Sản Phẩm Bắt Buộc Của Dự Án)
-Mỗi dự án hoàn thành bắt buộc xuất xưởng:
-1. `STORY.md` — Kịch bản storyboard phân cảnh kèm timecode beat nhạc.
-2. `CHARACTER_SHEETS.md` — Sheet nhân vật Uyên Hân, trang phục thể thao & đạo cụ tương ứng.
-3. `MEGA_PROMPTS.md` — Bộ prompt video chuyên dụng cho Veo 3.1 / Kling / Runway Gen-3.
-4. `AUDIO_GUIDE.md` (hoặc `VO_SCRIPT.md`) — Hướng dẫn chọn nhạc trend hoặc file thoại motivation.
-5. `METADATA_SEO.md` — 4 Prompt Thumbnail A/B test, headline dán ảnh, tiêu đề A/B, caption & hashtags.
-6. `export_batch/` — Trọn bộ 5 File Word (.docx) chuyên dụng cho Tool chạy hàng loạt (100% plain text paragraphs, 0 table):
-   - `00_HO_SO_THAM_CHIEU_GOC.docx`
-   - `01_PROMPTS_ANH_HANG_LOAT.docx`
-   - `02_PROMPTS_VIDEO_HANG_LOAT.docx`
-   - `03_PROMPTS_AUDIO_VOICE.docx`
-   - `04_METADATA_SEO.docx`
+Mỗi dự án hoàn thành bắt buộc xuất xưởng đầy đủ 7 hạng mục chuẩn V10 trong thư mục `examples/<ten-du-an>/`:
+1. `CHARACTER_SHEETS.md` — Sheet nhân vật Uyên Hân, trang phục thể thao & đạo cụ tương ứng.
+2. `STORY.md` — Kịch bản storyboard phân cảnh kèm timecode beat nhạc.
+3. `FLOW.md` — Sơ đồ dòng chảy hành động, chuỗi Keyframe K1 -> Kn và cơ chế match-cut.
+4. `MEGA_PROMPTS.md` — Bộ Mega Prompts video chuẩn Tagged Blocks độc lập từng phân cảnh.
+5. `VO_SCRIPT.md` — Hướng dẫn chọn nhạc trend, foley xích líp và lời thoại motivation thể thao.
+6. `METADATA_SEO.md` — 4 Prompt Thumbnail A/B test, headline dán ảnh, tiêu đề A/B, caption & hashtags.
+7. `export_batch/` — Trọn bộ 5 File Word (.docx) chuyên dụng cho Tool chạy hàng loạt (100% plain text paragraphs, 0 table):
+   - `00_HO_SO_THAM_CHIEU_GOC.docx`: Master Model Sheet 4 góc nhìn nhân vật, xe đạp, cung đường.
+   - `01_PROMPTS_ANH_HANG_LOAT.docx`: Danh sách prompt tạo ảnh Keyframe (chuẩn 1 đoạn văn/cảnh).
+   - `02_PROMPTS_VIDEO_HANG_LOAT.docx`: Danh sách Mega Prompts video chuẩn Tagged Blocks (1 đoạn văn/cảnh).
+   - `03_PROMPTS_VOICE_HANG_LOAT.docx`: Lời thoại / Music & Foley cue sạch cho tool TTS.
+   - `04_METADATA_SEO.docx`: Prompt Thumbnail, Headline, Tiêu đề A/B, Caption & Hashtag.

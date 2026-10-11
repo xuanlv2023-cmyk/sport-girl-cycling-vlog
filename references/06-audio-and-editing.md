@@ -11,9 +11,9 @@
 
 ### 🔹 Phong cách B: Sport Motivation / Healing Cycling (Có Lời Bình Ngắn 15s-30s)
 - **Đặc trưng:** Lồng tiếng một câu nói ngắn tràn đầy năng lượng tích cực về rèn luyện thể thao, buông bỏ muộn phiền bằng những vòng quay bánh xe.
-- **Giọng đọc:** Nữ Sài Gòn hoặc Hà Nội trẻ trung, tươi tắn, thanh thoát (20-23 tuổi).
+- **Giọng đọc (Bắt buộc 100%):** Nữ Miền Nam / Sài Gòn trẻ trung, tươi tắn, thanh thoát, nụ cười trong giọng nói (20-23 tuổi). Tuyệt đối không dùng giọng Bắc.
 - **Ví dụ lời thoại 15s (40 từ):**
-  > *"Mỗi khi cảm thấy áp lực bủa vây, mình lại dắt xe ra đường và đạp thật nhanh vào màn đêm. Khi gió lướt qua tai và phố xá lùi lại phía sau, mọi muộn phiền bỗng chốc tan biến. Hãy yêu lấy cơ thể và nụ cười của chính mình nhé!"*
+  > *"Mỗi khi cảm thấy áp lực bủa vây, mình lại dắt xe ra đường và đạp thật nhanh vào màn đêm. Khi gió lướt qua tai và phố xá lùi lại phía sau, mọi muộn phiền bỗng chốc tan biến. Hãy yêu lấy cơ thể và nụ cười của chính mình nghen!"*
 
 ---
 

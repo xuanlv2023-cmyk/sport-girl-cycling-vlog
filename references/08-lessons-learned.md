@@ -1,12 +1,37 @@
-# Giai Đoạn 8 — 10 Bài Học Xương Máu Về Video Thể Thao AI
+# BÀI HỌC KINH NGHIỆM & BỘ LỌC PHÒNG CHỐNG "CHẤT AI" CYCLING VLOG
+## Skill: `sport-girl-cycling-vlog` • Phiên bản: V10 Production
 
-1. **Bài học 1: Lỗi 3 bàn chân / 3 pê-đan:** Khi nhân vật đạp xe, AI rất hay vẽ thêm 1 chân lơ lửng. Khắc phục: luôn ghi rõ `two pedals synchronized with feet, both feet firmly planted on pedals, strictly no third leg, no phantom limbs`.
-2. **Bài học 2: Lỗi méo vành bánh xe (Warped Wheel Glitch):** Bánh xe quay nhanh dễ biến dạng thành hình trứng. Khắc phục: dùng từ khóa `perfectly circular wheels, rigid round bicycle rims, straight mechanical spokes`.
-3. **Bài học 3: Quá đà về camera zoom:** Lia máy quá nhanh gây chóng mặt buồn nôn (motion sickness). Khắc phục: Khóa camera `smooth stabilized parallel tracking, constant steady velocity, zero sudden pans`.
-4. **Bài học 4: Mặt búp bê sáp (AI Wax Doll Syndrome):** Người tập thể dục đổ mồ hôi tự nhiên nhưng AI hay làm da phẳng bóng dầu như nhựa. Khắc phục: `natural healthy glowing skin, visible delicate micro-pores, zero waxy plastic shine`.
-5. **Bài học 5: Đồ thể thao hở hang phản cảm vi phạm kiểm duyệt (NSFW Violation):** Đồ tập cần tôn dáng khỏe khoắn, không được hở hang quá mức dẫn đến bị nền tảng quét vi phạm. Khóa chuẩn: `tasteful athleisure, athletic cropped top, elegant modest sports fit, family-friendly athletic vlog`.
-6. **Bài học 6: Dây xích xe đạp lơ lửng:** Khắc phục: `authentic mechanical drivetrain, clean bicycle chain engaging rear gears`.
-7. **Bài học 7: Khuyên tai văng mất kiểm soát:** CẤM 100% khuyên tai/dây chuyền trong video thể thao.
-8. **Bài học 8: Mất kết nối beat nhạc:** Video thể thao bắt buộc phải cắt cảnh đúng nhịp drop bass để tạo hiệu ứng kích thích dopamine người xem.
-9. **Bài học 9: Lỗi bàn tay biến dạng trên ghi-đông:** Ghi rõ `natural five-fingered hands securely gripping bicycle handlebars`.
-10. **Bài học 10: Tóc che kín mặt:** Khi gió thổi, tránh tóc che kín mắt bằng cách yêu cầu `ponytail streaming backwards, face completely clear and visible, wispy bangs`.
+Tổng hợp các bẫy lỗi khiến video đạp xe AI trông đơ sáp, bối cảnh giả tạo và giải pháp xử lý triệt để:
+
+---
+
+### 1. BẪY MẶT ĐƠ SÁP BÚP BÊ (AI PLASTIC DOLL FACE TRAP)
+- **Hiện tượng:** Gương mặt bóng nhờn như tượng sáp, da láng mịn như búp bê silicon, mắt vô hồn, không có cảm giác gió thổi tự nhiên.
+- **Nguyên nhân:** Dùng các từ khóa `flawless skin, porcelain face, gorgeous, supermodel, perfect, 3D render`.
+- **Giải pháp dứt điểm:** Bắt buộc dùng:
+  `unretouched candid cycling vlog photography, authentic living 21-year-old Vietnamese athletic girl, natural soft matte skin finish with visible micro-pores and fine skin texture, subtle natural workout flush on cheeks, windblown hair tendrils fluttering naturally in night breeze, lively expressive dark eyes`.
+  Negative prompt: `airbrushed, plastic skin, porcelain doll, waxy shine, mannequin, CGI, 3D render`.
+
+---
+
+### 2. BẪY LỖI CƠ KHÍ XE ĐẠP (BICYCLE MECHANICAL MUTATION)
+- **Hiện tượng:** Bàn đạp quay ngược chiều, xích lơ lửng, bánh xe bị méo ovan, chân không chạm pê-đan.
+- **Giải pháp dứt điểm:**
+  - Trong video prompt, luôn ghi: `feet firmly planted on pedals, realistic forward pedaling cadence in continuous circular rhythm, dual perfectly circular wheels with straight spokes, stable straight chain`.
+  - Giữ mức Motion level an toàn `0.40 - 0.45` trên Kling AI / Wan để tránh biến dạng khung xe.
+
+---
+
+### 3. BẪY ÁNH SÁNG ĐÊM CYBERPUNK GIẢ TẠO (CGI NEON NIGHT TRAP)
+- **Hiện tượng:** Đường phố tối mịt với ánh sáng viền xanh/hồng neon rực rỡ như phim viễn tưởng, không giống một buổi đạp xe đời thực.
+- **Giải pháp dứt điểm:**
+  - Khóa ánh sáng thực tế: `authentic municipal street lamp tungsten glow, realistic night road ambiance with natural sensor low-light grain, authentic tire contact shadows on asphalt road`.
+  - Khóa cảm biến máy cơ: `captured on Sony A7S III with 35mm f/1.8 prime lens or iPhone 15 Pro 4K vlog style, natural optical depth of field, realistic dynamic range`.
+
+---
+
+### 4. BẪY MẤT ĐỒNG BỘ ĐẠP XE NHÓM HOẶC ĐỔI CUNG ĐƯỜNG (IDENTITY & ROUTE DRIFT)
+- **Hiện tượng:** Cảnh 1 đạp xe trên đại lộ, cảnh 2 bị nhảy sang khu rừng hoang vu hoặc đổi màu xe đạp.
+- **Giải pháp dứt điểm:**
+  - Khai báo Token cố định: `@_Brand_Sport_Lead`, `@_Bike_Laux_Purple` và `@_Location_City_Highway_Night` xuyên suốt các phân cảnh.
+  - Luôn đính kèm ảnh Turnaround Sheet của nhân vật và xe đạp khi tạo Keyframe.
