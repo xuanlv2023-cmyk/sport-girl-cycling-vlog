@@ -1,50 +1,62 @@
-# Giai Đoạn 3 — Kỹ Thuật Quay Dynamic Parallel Tracking & Chống Méo AI
+# Giai Đoạn 3 — Kỹ Thuật Quay Dynamic Parallel Tracking & Micro-Acting Cơ Thể
+## Skill: `sport-girl-cycling-vlog` • Low-Angle Tracking & Chuẩn Phân Cảnh 10.0s
 
-## 1. Bản Chất Của Kỹ Thuật Parallel Tracking Trong Video Đạp Xe
-Khác với thể loại vlog ngồi tĩnh, video đạp xe đạt triệu view nhờ vào **Cảm Giác Tốc Độ Mượt Mà (Smooth Kinetic Flow)**:
-- Chủ thể di chuyển về phía trước nhưng **giữ vị trí ổn định ở tâm khung hình (Center Framing)**.
-- Hậu cảnh xung quanh (hàng cây, đèn đường, mặt đường nhựa, tòa nhà) lướt về phía sau với độ nhòe chuyển động tự nhiên (*cinematic motion blur*).
-- Máy quay đồng tốc (chạy xe theo kèm bên cạnh hoặc phía trước) tạo góc nhìn như khán giả đang đạp xe lướt đi cùng nhân vật.
+Tài liệu này chuẩn hóa kỹ thuật điều khiển góc máy quay, tốc độ bám đuổi song song và chuỗi diễn xuất vi mô (Micro-Acting) bóc tách từ các video triệu view của **Linh Chi Đi Đạp**, tối ưu hóa hoàn hảo cho khung phân cảnh chuẩn **10.0 giây (`Exactly 10.0 seconds`)** của **Google Veo 3.1 & Muse**.
 
 ---
 
-## 2. Ma Trận 4 Góc Máy Đạp Xe Chuẩn Studio (Multi-Angle Cycling Camera Matrix)
+## 1. VŨ KHÍ GÓC MÁY THẤP HẤT LÊN (LOW-ANGLE UPWARD TRACKING)
 
-### 🔹 Góc 1: 3/4 Front Parallel Tracking (Góc Vàng Hút Triệu View)
-- **Vị trí:** Camera đặt chếch 45 độ phía trước bên hông, chạy song song cùng tốc độ xe đạp.
-- **Khung hình:** Thấy rõ khuôn mặt rạng rỡ của Uyên Hân, mái tóc bay phấp phới, tay lái, thân trên thon gọn và chuyển động của chân đạp.
-- **Cú pháp Prompt:**
+Khác với góc quay ngang mắt thông thường dễ làm video đơn điệu, bí quyết lớn nhất của kênh đối thủ là **Góc Máy Thấp Hất Nhẹ Lên (Low-Angle Upward Glide)**:
+- **Vị trí camera:** Đặt thấp hơn yên xe (tầm 40cm - 60cm so với mặt đường), chạy đồng tốc 15km/h chếch 45 độ phía trước bên hông xe.
+- **Hiệu ứng thị giác:**
+  1. Kéo dài đôi chân thon thả khi đạp pê-đan.
+  2. Tôn trọn vẹn đường cong vòng 1 căng đầy và cơ bụng số 11 phẳng lì.
+  3. Bắt trọn góc cằm thanh tú, má lúm đồng tiền và nụ cười rạng rỡ của Uyên Hân trên nền bầu trời đêm lung linh đèn phố.
+- **Cú pháp Prompt Chuẩn:**
   ```text
-  Smooth parallel tracking camera moving alongside at exact matching speed, medium-full shot framed from 3/4 front angle, subject centered in 9:16 vertical frame. Beautiful motion blur on city road and passing streetlights, crisp sharp focus on subject face and upper body.
-  ```
-
-### 🔹 Góc 2: Side-Profile Full Tracking (Góc Khoe Đường Cong & Vóc Dáng)
-- **Vị trí:** Camera đặt vuông góc 90 độ ngang tầm hông, di chuyển song song.
-- **Khung hình:** Thấy toàn bộ dáng xe đạp ngang, chuyển động guồng chân đạp pê-đan đều đặn, đường cong chữ S quyến rũ, lưng thẳng tự nhiên.
-- **Cú pháp Prompt:**
-  ```text
-  Smooth side-view tracking shot at bike level, capturing full horizontal profile of woman cycling smoothly, mechanically synchronized pedaling motion, shapely athletic silhouette, dynamic motion blur streaks on passing background trees and pavement.
-  ```
-
-### 🔹 Góc 3: Rear Over-the-Shoulder Tracking (Góc Nhìn Khám Phá & Tự Do)
-- **Vị trí:** Camera chạy bám đuổi từ phía sau lệch một bên vai hoặc trực diện đuôi xe.
-- **Khung hình:** Thấy mái tóc bồng bềnh tung bay trong gió, tấm lưng thon, ba lô nhỏ thể thao và con đường thênh thang phía trước.
-- **Cú pháp Prompt:**
-  ```text
-  Rear tracking camera chasing smoothly behind rider, showing windblown flowing ponytail, athletic posture, expansive open road receding ahead under twilight sky, camera maintains stable distance.
-  ```
-
-### 🔹 Góc 4: Stop & Pose / Dancing on Bike Beat (Điểm Dừng Nhấn Beat)
-- **Vị trí:** Cận trung (MCU), xe giảm tốc độ hoặc dừng chân chạm đất, nhân vật nhìn thẳng vào camera làm cử chỉ vẫy tay, làm dấu chữ V, bắn tim hoặc nhún nhảy nhẹ theo điệu nhạc.
-- **Cú pháp Prompt:**
-  ```text
-  Smooth camera decelerates into medium close-up, subject slowing down with one foot lightly tapping the ground, turning warmly toward lens with dazzling genuine smile, playful hand wave to viewer, joyful carefree demeanor.
+  Dynamic low-angle parallel tracking camera moving smoothly at matching 15km/h speed alongside subject from 3/4 front angle, lens positioned below handlebar height looking upward at 35-degree angle. Subject centered tack-sharp in 9:16 vertical frame, capturing long shapely legs and prominent chest curves, while city road and golden streetlights streak backwards with realistic cinematic motion blur.
   ```
 
 ---
 
-## 3. Bộ Từ Khóa Chống Méo Khuyết Tật AI (Negative Constraints for Cycling)
-Khi tạo prompt cho Veo 3.1, Kling, Runway Gen-3, Luma:
-- **Chân & Cơ thể:** `strictly no phantom limbs, no third leg, no disconnected legs, feet firmly touching pedals at all times, no morphing knees, no rubbery thighs`.
-- **Xe đạp:** `mechanically accurate bicycle frame, perfectly round wheels, rigid straight spokes, no melting chain, no duplicate handlebars, no detached seat`.
-- **Mặt & Da:** `real unretouched Asian beauty, natural matte glowing skin, visible micropores, no waxy shine, no CGI anime rendering, no airbrushed mannequin face`.
+## 2. MA TRẬN 4 GÓC QUAY CHUẨN ĐA DẠNG NỘI DUNG
+
+### 🔹 Góc 1: 3/4 Low-Angle Tracking (Đạp Xe Đêm / Hoàng Hôn - Góc Triệu View)
+- Bắt trọn vóc dáng đồng hồ cát, chân đạp mượt mà, gió thổi tóc bay phất phơ, nụ cười quay sang nhìn camera.
+
+### 🔹 Góc 2: Side-Profile Full Tracking (Góc Ngang Khoe Đường Cong Chữ S)
+- Camera đặt ngang hông cách 2.5m, di chuyển tịnh tiến song song. Thấy rõ đường cong ngực - eo - mông, lưng cong thể thao, vòng đạp pê-đan cơ học tròn trịa.
+
+### 🔹 Góc 3: Medium-Full Front Shot Nhún Bạt Nhún / Máy Rung (Trampoline & Vibration)
+- Camera đặt ngang eo hướng nhẹ lên, bắt trọn toàn bộ cơ thể từ đầu đến chân nhảy nhún trên bạt hoặc đứng rung toàn thân. Chuyển động nảy đàn hồi tự nhiên theo quán tính cơ thể người thật (`natural kinetic bounce & breast physics`).
+
+### 🔹 Góc 4: Front Close-Up Lens Lock-On (Cận Cảnh Tỏa Nắng & Nháy Mắt)
+- Camera tiến sát ghi-đông hoặc mặt, bắt trọn khoảnh khắc Uyên Hân ngước mắt nhìn ống kính, cười bừng sáng má lúm đồng tiền, nháy mắt tinh nghịch (`playful wink`) làm chao đảo người xem.
+
+---
+
+## 3. TIMELINE PHÂN RÃ HÀNH ĐỘNG CHUẨN 10.0 GIÂY (10.0S MICRO-ACTING PROTOCOL)
+
+Mọi phân cảnh render trên Veo 3.1 / Muse đều khóa cứng đúng **10.0 giây**, chia thành 3 nhịp cảm xúc biến đổi liên tục:
+
+```
+0.0s ───────────────────── 3.0s ───────────────────── 7.0s ───────────────────── 10.0s
+[NHỊP 1: THE HOOK]              [NHỊP 2: THE SMILE & WINK]      [NHỊP 3: SENSUAL SETTLEMENT]
+Vận động thể thao say sưa,       Ngước mắt nhìn thẳng máy quay,   Buông tay thả dáng / bắn tim,
+gió lùa tóc tung bay,            cười bừng sáng má lúm đồng tiền, lắc hông / vuốt tóc theo nhạc,
+nhịp thở tự nhiên lồng ngực      nháy mắt tinh nghịch đốn tim     mỉm cười ngọt ngào chuyển cảnh
+```
+
+- **Nhịp 1 [0.0s - 3.0s] (The Hook):** Nhân vật tập trung đạp xe / nhún bạt nhún, mắt nhìn về phía trước, gió lùa tóc tung bay, lồng ngực phập phồng tự nhiên theo nhịp thở thể thao.
+- **Nhịp 2 [3.0s - 7.0s] (The Smile & Wink):** Bất chợt quay đầu nhìn thẳng vào ống kính máy quay, nở nụ cười rạng rỡ má lúm sâu, nháy mắt phải tinh nghịch đầy ma lực (`flirty playful wink`), giao tiếp ánh mắt thôi miên người xem.
+- **Nhịp 3 [7.0s - 10.0s] (Sensual Settlement):** Buông một tay khỏi ghi-đông làm cử chỉ vẫy chào / tay làm nửa trái tim / vuốt nhẹ lọn tóc vướng má; thân trên lắc lư uyển chuyển theo nhạc, mỉm cười ngọt ngào trước khi xe lướt êm chuyển giao sang Keyframe kế tiếp.
+
+---
+
+## 4. KỶ LUẬT KHÓA CHUYỂN ĐỘNG CƠ KHÍ & CHỐNG MÉO KHUYẾT TẬT AI
+
+Khi render trên Veo 3.1, Kling 1.6, Runway Gen-3, Luma:
+1. **Khóa guồng chân pê-đan:** `feet firmly planted on rotating pedals, synchronized rotational cadence, strictly NO feet slipping off pedals, NO phantom extra leg, NO morphing knees`.
+2. **Khóa hình học bánh xe:** `perfectly circular round wheels with straight metallic spokes, zero oval wheel distortion, rigid bicycle frame with realistic tire contact shadows on asphalt`.
+3. **Khóa chất da người thật:** `real unretouched Asian beauty, natural matte glowing skin, visible micro-pores, delicate workout perspiration sheen, NO waxy plastic shine, NO CGI anime doll look`.
